@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><link rel=icon href=favicon.ico><title>飞亚达</title><style></style><script>(function(window, document) {
+        function resize() {
+          var ww = window.innerWidth
+          if (ww > window.screen.width) {
+            window.requestAnimationFrame(resize)
+          } else {
+            if (ww > 750) {
+              ww = 750
+            }
+            document.documentElement.style.fontSize = ww * 100 / 750 + 'px'
+          }
+        }
+
+        resize();
+
+        window.addEventListener('resize', resize);
+        window.addEventListener('pageshow', function (e) {
+          if (e.persisted) {
+            resize();
+          }
+        });
+      })(window, document);</script><link href=js/chunk-5dadbb70.b490529b.js rel=prefetch><link href=css/app.24e2533c.css rel=preload as=style><link href=css/chunk-vendors.2c1e1060.css rel=preload as=style><link href=js/app.ccdd3a84.js rel=preload as=script><link href=js/chunk-vendors.51cee493.js rel=preload as=script><link href=css/chunk-vendors.2c1e1060.css rel=stylesheet><link href=css/app.24e2533c.css rel=stylesheet></head><body><div id=app></div><script src=js/chunk-vendors.51cee493.js></script><script src=js/app.ccdd3a84.js></script></body></html>
